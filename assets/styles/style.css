@@ -1,0 +1,190 @@
+/* SEMUA */
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+header {
+  display: inline;
+}
+
+.jumbotron {
+  background-color: #222120;
+  background-size: cover;
+  font-size: 15px;
+  padding: 60px;
+  text-align: center;
+  color: white;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #c6bdb1;
+  font-family: 'Georgia', serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: rgba(30, 27, 24, 0.95);
+  padding: 5px;
+  position: sticky;
+  
+  top: 0;
+}
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+
+  gap: 1.25rem;
+}
+ 
+nav li {
+  list-style-type: none;
+  margin: auto;
+}
+nav a {
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover{
+  font-weight: bold;
+}
+
+main{
+  padding: 15px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+h2, h3 {
+  color: #1e1913;
+}
+
+#content {
+  flex: 5;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #222120;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+#myAudio {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 18px;
+  background-color: rgb(166, 109, 60);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  border: none;
+}
+
+#myAudio:hover {
+  background-color: #555;
+}
+
+/* card */
+
+.card {
+  background-color: #6d6a65;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+}
+
+.card figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.card .featured-images {
+  height: 400px;
+}
+
+
+.icon-container {
+  position: fixed;
+  right: 20px;
+  top: 60px;
+  z-index: 1000;
+}
+
+.audio-icon {
+  width: 40px;
+  height: 40px;
+  background: #afafaf;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.audio-icon:hover {
+  background: #757575;
+}
+
+.audio-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* Untuk Resolusi HP */
+
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+  
+  .card .featured-images {
+    height: 300px;
+  }
+  
+  .icon-container {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    z-index: 1000;
+  }
+
+  .audio-icon img {
+    width: 30px;
+    height: 30px;
+  }
+  
+}
